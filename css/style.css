@@ -1,0 +1,70 @@
+*, *::after, *::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style-type: none;
+	overflow: auto;
+}
+
+nav, header, section, footer {
+	width: 100%;
+	overflow: auto;
+	padding: 50px 0;
+	color: #fff;
+}
+
+nav div,
+header div,
+section div,
+footer div {
+	width: 100%;
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+nav {
+	padding: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(40, 40, 40, 1);
+}
+
+nav li {
+	float: left;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	display: block;
+	padding: 0 15px;
+	line-height: 64px;
+}
+
+header#home {
+	padding-top: 114px;
+}
+
+header div, section div, footer div {
+	min-height: 100vh;
+}
+
+header#home{background: #d32f2f;}
+section#services{background: #7B1FA2;}
+section#about{background: #303F9F;}
+section#features{background: #0288D1;}
+section#portfolio{background: #00796B;}
+section#team{background: #689F38;}
+section#pricing{background: #FBC02D;}
+footer#contact{background: #F57C00;}
+
+#scroll-env a.active {
+	background: rgba(150, 150, 0, 0.85);
+	transition: all 0.3s ease-in-out;
+}
